@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Fiber Toolbox</title>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+
+	  <style>
+
+			* {
+				box-sizing: border-box;
+			}
+
+	    body {
+
+	      font-family: 'Roboto', sans-serif;
+
+	    }
+
+			label {
+
+				display: block;
+				font-weight: 500;
+				margin-bottom: 5px;
+
+			}
+
+			select {
+
+				border: 0;
+				background: #f5f5f5;
+				height: 50px;
+				border-radius: 5px;
+				width: 250px;
+				margin-bottom: 20px;
+				outline: none;
+				padding-left: 10px;
+				padding-right: 10px;
+
+			}
+
+	    #result {
+
+	      font-size: 100px;
+	      font-weight: 500;
+				line-height: 100px;
+				padding: 20px;
+				text-align: center;
+				width: 250px;
+				background: #f5f5f5;
+
+	    }
+
+	  </style>
+	</head>
+
+	<body>
+
+		<!-- Simple header with scrollable tabs. -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		  <header class="mdl-layout__header">
+		    <div class="mdl-layout__header-row">
+		      <!-- Title -->
+		      <span class="mdl-layout-title">Fiber Toolbox</span>
+		    </div>
+		    <!-- Tabs -->
+		    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+		      <a href="#tab-fiber-number" class="mdl-layout__tab is-active">Numero fibra</a>
+		      <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
+		    </div>
+		  </header>
+
+		  <div class="mdl-layout__drawer">
+		    <span class="mdl-layout-title">Nothing here!</span>
+		  </div>
+
+		  <main class="mdl-layout__content">
+
+		    <section class="mdl-layout__tab-panel is-active" id="tab-fiber-number">
+		      <div class="page-content" style="padding: 40px;">
+
+						<div class="">
+							<label class="" for="tubeNumber">Numero tubetto</label>
+							<select class="" id="tubeNumber">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+
+
+						<div class="">
+						  <label class="" for="fiberColor">Numero Tubo</label>
+						  <select class="" id="fiberColor">
+						    <option value="1">blu</option>
+						    <option value="2">arancio</option>
+						    <option value="3">verde</option>
+						    <option value="4">marrone</option>
+						    <option value="5">grigio</option>
+						    <option value="6">bianco</option>
+						    <option value="7">rosso</option>
+						    <option value="8">nero</option>
+						    <option value="9">giallo</option>
+						    <option value="10">viola</option>
+						    <option value="11">rosa</option>
+						    <option value="12">azzurro</option>
+
+						    <option value="13">blu bordata</option>
+						    <option value="14">arancio bordata</option>
+						    <option value="15">verde bordata</option>
+						    <option value="16">marrone bordata</option>
+						    <option value="17">grigio bordata</option>
+						    <option value="18">bianco bordata</option>
+						    <option value="19">rosso bordata</option>
+						    <option value="20">nero bordata</option>
+						    <option value="21">giallo bordata</option>
+						    <option value="22">viola bordata</option>
+						    <option value="23">rosa bordata</option>
+						    <option value="24">azzurro bordata</option>
+						  </select>
+						</div>
+
+						  <div id="result">-</div>
+
+					</div>
+		    </section>
+
+		    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+		      <div class="page-content"><!-- Your content goes here -->sdf</div>
+		    </section>
+
+		  </main>
+
+		</div>
+
+
+
+	  <script>
+	    var tn = document.getElementById('tubeNumber');
+	    var fc = document.getElementById('fiberColor');
+	    var r = document.getElementById('result');
+
+	    tn.addEventListener('change', compute);
+	    fc.addEventListener('change', compute);
+
+	    function compute()
+	    {
+	      var n = (tn.value-1)*24 + (fc.value-0);
+
+	      r.innerHTML = n;
+	    }
+
+	  </script>
+	</body>
+
+</html>

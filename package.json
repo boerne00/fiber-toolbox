@@ -1,0 +1,24 @@
+{
+  "name": "fiber-toolbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boerne00/fiber-toolbox.git"
+  },
+  "author": "Boerne00",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boerne00/fiber-toolbox/issues"
+  },
+  "homepage": "https://github.com/boerne00/fiber-toolbox#readme",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}
