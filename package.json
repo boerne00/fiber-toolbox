@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/boerne00/fiber-toolbox#readme",
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~1.5.3",
     "grunt-contrib-sass": "~0.3.0",
-    "grunt-contrib-watch": "~0.4.4"
+    "grunt-contrib-watch": "~1.1.0"
   }
 }
